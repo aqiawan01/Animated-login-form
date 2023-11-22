@@ -90,4 +90,49 @@ form a {
     }
 }
 
+// Password Visible Toggle  
+.password {
+   position: relative;
+   .icon{
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     cursor: pointer;
+   }
+}
+
+// Hide Indicator
+.hide-indicator {
+    display: none;
+}
+
+.show-indicator {
+    display: block;
+    animation: slide-up 0.5s ease;
+}
+
+.pass-green {
+    color: green;
+}
+
+.pass-red {
+    color: red;
+}
+
+.btn-disabled {
+    position: relative;
+    cursor: not-allowed;
+}
+
+.btn-disabled::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 999;
+}
+
 
